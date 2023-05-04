@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Descubriendo Gran Canaria</title>
+	<style>
+		body {
+			background-color: white;
+			margin: 0;
+			padding: 0;
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		h1 {
+			font-family: "Times New Roman", Times, serif;
+			color: white;
+			background-color: black;
+			text-align: center;
+			padding: 20px;
+			margin: 0;
+		}
+		button {
+			font-family: "Times New Roman", Times, serif;
+			font-size: 18px;
+			color: black;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			margin: 10px;
+			padding: 10px 20px;
+			transition: color 0.2s, background-color 0.2s;
+		}
+		button:hover {
+			color: white;
+			background-color: black;
+		}
+        .image-container {
+           display: flex;
+           justify-content: center;
+        }
+        .caption {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: 'Times New Roman', serif;
+  color: black;
+}
+
+	</style>
+</head>
+<body>
+	<h1>Descubriendo Gran Canaria</h1>
+	<div style="display: flex; justify-content: center;">
+		<button>Nuevo Lugar que visitar</button>
+		<button>Lugares que no me puedo perder</button>
+	</div>
+    <form>
+        <h2>Nuevo lugar que visitar</h2>
+        <div>
+          <label for="name">Nombre del lugar:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="descriere">Descripcion:</label>
+          <input type="text" id="descriere" name="descriere" required>
+        </div>
+        <div>
+          <label for="text">Municipio donde se encuentra</label>
+          <textarea id="text" name="text" required></textarea>
+        </div>
+        <div>
+          <button type="Enviar">Enviar</button>
+        </div>
+      </form>
+</body>
+</html>
